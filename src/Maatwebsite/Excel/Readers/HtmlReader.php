@@ -825,7 +825,7 @@ class Html extends PHPExcel_Reader_HTML {
     {
         $startCell = $column . $row;
 
-        $this->spanWidth = $spanWidth;
+        $this->spanWidth = (int) $spanWidth;
 
         // Find end column letter
         for ($i = 0; $i < ($spanWidth - 1); $i++)
